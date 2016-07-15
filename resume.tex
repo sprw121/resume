@@ -1,0 +1,121 @@
+\documentclass{article}
+
+% Shrink margins
+\usepackage[margin=.9in]{geometry}
+
+% For hyperlinks
+\usepackage{hyperref}
+
+% For making compact lists with itemize* environment
+\usepackage{mdwlist}
+
+% Fancy sections
+\newcommand{\ressection}[1]{\noindent{\large\textbf{#1}}\vspace{2pt}\hrule\vspace{4pt}}
+
+% For items with dates: \hfill fills up horizontal space until the
+% words to the left and the right are as far apart as possible
+\newcommand{\leftandright}[2]{\noindent\textbf{#1}\hfill\textbf{#2}}
+
+\newcommand{\leftandrighti}[2]{\indent\textit{#1}\hfill\textit{#2}}
+
+% Remove page numbering
+\pagestyle{empty}
+
+\begin{document}
+
+%% Change font family
+\sffamily
+
+\begin{center}
+\textbf{\huge{Steven~P.~Wright}}
+
+\href{mailto:sprw121@gmail.com}{sprw121@gmail.com}
+\textbullet\, 415 233 3077
+\textbullet\, \href{https://github.com/sprw121}{http://github.com/sprw121}
+\end{center}
+
+\ressection{Work experience}
+
+\leftandright{AdRoll}{San Francisco, CA} \\
+\leftandrighti{Senior Data Scientist}
+	      {January 2016 - Present}\\
+\leftandrighti{Data Scientist}
+	      {December 2014 - January 2016}
+
+\begin{itemize*}
+\item Senior engineer for AdRoll's real time bid pricing algorithms, utilitizing
+  large scale machine learning to predict user actions and price impressions accordingly.
+  Priced \textgreater \$150 million in ad spend per year.
+\item Architected and implemented AdRoll's real-time data pipeline to provide up to date
+  user browsing data at bid time. (http://tech.adroll.com/blog/data-science/2015/12/08/data-science\_event\_processing.html)
+\item Designed algorithms to adjust bid prices to exploit auction dynamics across
+  different ad exchanges.
+\item Responsible for the latency sensitive real-time bid pricing server,
+  maintained \textless .01\% timeout rate at a 1ms SLA.
+\item Core contributor to the in house supervised learning system. Designed the
+  data IO and caching subsystem, contributed to feature engineering and learning frameworks,
+  parallelization, vectorization and debugging of learning algorithms: SDCA, LBFGS, AGAGRAD SGD,
+  Factorization Machines.
+\end{itemize*}
+
+\leftandright{Spire Global, Inc}{San Francisco, CA} \\
+\leftandrighti{Software Engineer}{May -- October 2014}
+
+\begin{itemize*}
+\item Implemented a telemetry data logging and analysis system,
+ used for monitoring satellite performance and investigating satellite anomalies.
+\item Contributed to the development of Raptor data encodings for data transfer over
+  lossy UDP connections.
+\item Developed application layer command-and-control procedures for satellite components
+  on top of the CSP protocol stack.
+\end{itemize*}
+
+\leftandright{Deep Blue Capital Management}{San Francisco, CA} \\
+\leftandrighti{Intern}{January - June 2013}
+
+\begin{itemize*}
+\item Conducted equity research and analysis on publicly traded technology companies.
+\item Performed quantative analysis on past returns with an emphasis on portfolio risk.
+\end{itemize*}
+
+\leftandright{UCSF}{San Francisco, CA} \\
+\leftandrighti{Intern}{May - September 2012}
+\begin{itemize*}
+\item Analyzed multivariate biostatistical data from NMR spectroscopy experiments, where
+  the number of covariates was large compared with the number of data points.
+\item Utilized dimensionality reduction techniques, including PCA and constrained regressions
+  using LARS and lasso algorithms to gain insights into hypoxia risk based on metabolomic data.
+\end{itemize*}
+
+\ressection{Education}
+
+\leftandright{University of California, Santa Barbara, \textmd{B.S. Applied
+    Mathematics and Statistics}}{2009 - 2013}
+\begin{itemize*}
+\item Supervised independent study in Financial Mathematics under Jean-Pierre Fouque.
+\item Designed and implemented a low latency limit order matching engine,
+  competitive with top entrants to QuantCup.
+  (https://github.com/sprw121/matching\textunderscore engine)
+\item \textbf{Relevant coursework:} Statistical Theory, Graduate Time Series,
+  Graduate Multivariate Statistics, Graduate Financial Mathematics,
+  Numerical Analysis, Partial Differential Equations,
+  Advanced Linear Algebra, Stochastic Processes, Real Analysis,
+  Microeconomics, Fixed Income Markets, Data Structures, Algorithms.
+\end{itemize*}
+
+\vspace{1.0em}
+
+\vspace{1.0em}
+
+\ressection{Skills}
+
+\begin{itemize*}
+\item \textbf{Profession Experience:} C, D, Python, Erlang, AWS, Linux.
+\item Experience building scalable, high performance machine learning systems,
+  real time data systems, low latency server design, and engineering in
+  constrained resource environments.
+\item Proven ability to provide technical leadership, project management,
+  and coordinate development with multiple teams.
+\end{itemize*}
+
+\end{document}
